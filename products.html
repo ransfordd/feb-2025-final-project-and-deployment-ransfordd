@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - ShopEase</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/icons/Technova.png">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products-section">
+            <div class="filters">
+                <h3>Filter Products</h3>
+                <div class="filter-group">
+                    <label for="category">Category:</label>
+                    <select id="category">
+                        <option value="all">All Categories</option>
+                        <option value="laptops">Laptops</option>
+                        <option value="desktops">Desktops</option>
+                        <option value="monitors">Monitors</option>
+                        <option value="phones">Phones</option>
+                        <option value="headphones">Headphones</option>
+                        <option value="projectors">Projectors</option>
+                        <option value="components">Components</option>
+                        <option value="accessories">Accessories</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price">Price Range:</label>
+                    <select id="price">
+                        <option value="all">All Prices</option>
+                        <option value="0-500">$0 - $500</option>
+                        <option value="501-1000">$501 - $1000</option>
+                        <option value="1001-2000">$1001 - $2000</option>
+                        <option value="2001+">$2000 and above</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid" id="products-container">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <img src="images/icons/TechnovaB.png">
+            </div>
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>TechNova is your one-stop destination for all your computing needs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: ransfordf55@gmail.com</p>
+                <p>Phone: +233 00-000-0000</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100015613007002"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/__ransford"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/_.ransford"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TechNova. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
